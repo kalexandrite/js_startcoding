@@ -18,8 +18,7 @@ let cutePhrases = [
 
 
 function setup() {
-  createCanvas(windowWidth,windowHeight);
-  textSize(emojiScale);
+  createCanvas((windowWidth),(windowHeight));
   textAlign(CENTER, CENTER);
   noStroke();
   frameRate(20);

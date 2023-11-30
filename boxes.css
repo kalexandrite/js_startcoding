@@ -1,38 +1,42 @@
 
 .container {
-    width: 100%;
-    height: 100%;
+    min-width: 100vw;
+    min-height: 100dvh;
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 4 columns with equal width */
-    grid-template-rows: repeat(2, 1fr); /* 4 rows with equal height */
-    gap: 0px; 
-    margin: 10px;
-  }
-  
+    align-items: center;
+    justify-content:center;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
   /* style for grid square */
   .square {
-    display: flex; /* Use flex for better responsiveness */
-    align-items: center;
-    justify-content: center;
-    width: 30vw; /* Use viewport width units */
-    height: 25vh; /* Use viewport height units */
-    box-sizing: border-box;
-    overflow: hidden;
-    scroll-margin: 0;
+    display: border-box;
+
   }
 
   /* Style for the iframe within each square */
 iframe {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
     border: none; /* Remove the iframe border */
   }
   
-  /* Make the grid responsive by using relative units for margin and gap */
-  @media (max-width: 1000px) {
+
+  @media (max-width: 200px) {
     .container {
+        min-width: 100vb;  
+        min-height: 100vh;
       margin: 5%;
-      gap: 10px;
+      gap: 0px;
+      align-content: center;
+      justify-content: center;
     }
-  }
+}
+
+@media (max-width: 1800px) {
+    .container {
+      min-width: 100vb;  
+      min-height: 100vh;
+      margin: 10%;
+      align-content: center;
+      justify-content: center;
+    }
+}
