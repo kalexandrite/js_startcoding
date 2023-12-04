@@ -271,5 +271,7 @@ iframe {
 
 #squirrel{
     display: inline-block;
-        position:relative;
+    align-items: center;
+    align-content: center;
+
 }
