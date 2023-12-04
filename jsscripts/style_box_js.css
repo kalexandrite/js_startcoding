@@ -1,0 +1,275 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,800);
+@import url("https://fonts.googleapis.com/css2?family=Changa&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=BioRhyme+Expanded:wght@800&family=Handjet:wght@500&display=swap");
+
+@font-face {
+    font-family: "Noto Emoji", sans-serif;
+    src: "/assets/NotoColorEmoji-Regular.ttf";
+    font-variation-settings: unset;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background: gradient1;
+    background-repeat: repeat;
+    background-size: 200% 300%;
+    animation: gradient1 30s forwards ease-in-out 0s running infinite;
+}
+
+@keyframes gradient1 {
+    0% {
+        background: linear-gradient(90deg, #fcd7d7, #e2f0e2, #e59648, #fcd7d7);
+    }
+
+    50% {
+        background: linear-gradient(90deg,
+                #ffffff,
+                #3af79c,
+                rgba(148, 255, 169, 0.886),
+                #9dfff2);
+    }
+
+    70% {
+        background: linear-gradient(90deg, #ffffff, #209420, #48e5a6, #ffffff);
+    }
+
+    0% {
+        background: linear-gradient(90deg, #fcd7d7, #e2f0e2, #e59648, #fcd7d7);
+    }
+}
+
+#layout-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: stretch;
+    justify-content: center;
+    justify-items: stretch;
+    padding: 10px;
+    margin: 0px;
+    min-height: min-content;
+    min-width: 400px;
+}
+
+.layout-item {
+    overflow: hidden;
+    background-color: color-change;
+    align-content: center;
+    justify-content: center;
+    max-width:100;
+    max-height:100;
+    font-family: "BioRhyme Expanded", serif;
+    font-weight: 800;
+    font-size: 1.5rem;
+    animation: color-change 7s forwards ease-in-out 0s running infinite;
+    margin: 0.5ch;
+    padding: 1ch;
+    font-weight: 800;
+    color: #f7f7f7;
+    box-shadow: #723a3a 5px 2px 10px;
+}
+
+@keyframes color-change {
+    0% {
+        background-color: rgb(221, 168, 168);
+    }
+
+    50% {
+        background-color: rgb(203, 69, 69));
+    }
+
+    100% {
+        background-color: rgb(216, 174, 174);
+    }
+}
+
+.layout-item2 {
+    justify-content:stretch;
+    justify-items: center;
+    align-content: center;
+    align-items: stretch;
+    background-color: rgba(167, 173, 241, 0.886);
+    min-width: min-content;
+    min-height: min-content;
+    color: typecolor;
+    animation: typecolor 10s ease-in 0s forwards;
+    font-family: "Changa", sans-serif;
+    /* clip-path: polygon(40% -10%, 80% 50%, 60% 70%, -60% 2%, 1% -5%); */
+    clip-path: ellipse(40% 40%);
+    font-size: 3.5rem;
+    text-shadow: #269a7be2  7px 7px 5px;
+    margin: 1ch;
+    padding: 1ch;
+    box-shadow: inset  #154135e2 10px 10px;
+}
+
+@keyframes typecolor {
+    0% {
+        color: rgba(39, 25, 234, 0.6);
+    }
+
+    50% {
+        color: rgba(255, 255, 255, 1);
+    }
+
+    100% {
+        color: rgba(236, 5, 5, 0);
+    }
+}
+
+.layout-item3 {
+    justify-content:center;
+    align-content: center;
+    min-width: min-content;
+    font-size: 1.1rem;
+    background-color: #69e0c1e2;
+    text-shadow: rgb(67, 66, 3) 2px 1px 2px;
+    font-family: "BioRhyme Expanded", serif;
+    font-weight: 800;
+    animation: typecolor2 forwards 15s ease-in-out 0s infinite;
+    color: typecolor2;
+    margin: 1ch;
+    padding: 2ch;
+    border-radius: 10px 100px / 120px;
+    box-shadow: #163b28 6px 7px 10px;
+}
+
+@keyframes typecolor2 {
+    0% {
+        color: rgba(0, 85, 70, 0.83);
+    }
+
+    50% {
+        color: rgb(255, 241, 163);
+    }
+
+    100% {
+        color: rgb(29, 39, 6);
+    }
+}
+
+.layout-item4 {
+    justify-content: center;
+    align-items:  center;
+    min-width: 100px;
+    min-height: 100px;
+    flex-wrap: 1;
+    background-color: rgba(61, 140, 244, 0.951);
+    color: typecolor2;
+    text-shadow: rgb(185, 234, 38) 2px 1px;
+    animation: typecolor2 20s ease-in 0s forwards;
+    font-family: "Handjet", sans-serif;
+    clip-path: polygon(0% 5%, 10% 100%, 100% 0%);
+    font-size: 1.5rem;
+    padding: 1ch;
+    border-radius: 20px, 20px, 20px;
+    box-shadow: #723a3a 1px 6px 20px;
+}
+
+@keyframes typecolor2 {
+    0% {
+        color: rgba(215, 154, 1, 0.4);
+    }
+
+    50% {
+        color: rgba(255, 255, 255, 1);
+    }
+
+    100% {
+        color: rgba(237, 34, 34, 0.4);
+    }
+}
+
+a {
+    text-shadow: #041d11 3px 6px 10px;
+    font-style: normal;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.boxflex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: stretch;
+    min-width:min-content;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+button {
+    display: block;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 1.4ch;
+    margin: 1.4ch;
+    color: rgb(221, 197, 247);
+    border-radius: 40% 40% 40% 40%;
+    border-color: rgb(101, 151, 175);
+    font-family: "Changa", sans-serif;
+    font-size: 1.2rem;
+    text-shadow: rgb(59, 59, 35) 1px 1px 2px;
+    background-color: #000;
+    box-shadow: #3536353a 20px 20px 10px;
+}
+
+.layout-item-iframe {
+    display: block;
+    overflow: hidden;
+    align-content: stretch;
+    justify-content: stretch;
+    max-width: 100%;
+    font-family: "BioRhyme Expanded", serif;
+    font-size: 1rem;
+    font-weight: 800;
+    box-shadow: #2e2a2a 2px, -2px, 5px;
+}
+
+.iframevideo {
+    display: inline-flex;
+    justify-items: left;
+    align-items: left;
+    background-color: #000;
+    height: 80;
+
+    border: none;
+    overflow: hidden;
+    padding: 1ch;
+    
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    overflow: hidden;
+    margin: 0;
+
+}
+
+#photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap:0;
+    margin: -15;
+    border-radius: 87%, 87%, 87%, 85%;
+    object-fit: cover;
+}
+
+.photo-item {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: -10;
+    border-radius: 87%, 87%, 87%, 85%;
+    background-color: rgba(230, 203, 52, 0.337);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#squirrel{
+    display: inline-block;
+        position:relative;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS for photo scroll</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    #photo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 15px;
+      padding: 15px;
+    }
+
+    .photo-item {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+
+  <div id="photo-grid"></div>
+
+  <script>
+    const photoGrid = document.getElementById('photo-grid');
+    const photoURLs = [
+      'https://videoapi-muybridge.vimeocdn.com/animated-thumbnails/image/970c6d11-a52a-4879-afa2-53138aae4d32.gif?ClientID=vimeo-core-prod&Date=1647729514&Signature=2a089aa15bbf41e0e9b9eef2ed3aa1d394ab1f3d',
+      'https://videoapi-muybridge.vimeocdn.com/animated-thumbnails/image/97099242-08ea-44f6-89c5-685e000f5cd0.gif?ClientID=vimeo-core-prod&Date=1647728147&Signature=71c524535b6d1d4584f4a7a3b0a32bf27cead47b',
+      'https://videoapi-muybridge.vimeocdn.com/animated-thumbnails/image/93b9a154-ecc1-43c2-92e6-0b14a6dc1ee4.gif?ClientID=vimeo-core-prod&Date=1647730965&Signature=01143cec6fcba635546e1067973f9e3bbf5ad8ad',
+      'https://videoapi-muybridge.vimeocdn.com/animated-thumbnails/image/970c6d11-a52a-4879-afa2-53138aae4d32.gif?ClientID=vimeo-core-prod&Date=1647729514&Signature=2a089aa15bbf41e0e9b9eef2ed3aa1d394ab1f3d',
+      'https://videoapi-muybridge.vimeocdn.com/animated-thumbnails/image/97099242-08ea-44f6-89c5-685e000f5cd0.gif?ClientID=vimeo-core-prod&Date=1647728147&Signature=71c524535b6d1d4584f4a7a3b0a32bf27cead47b',
+      'https://videoapi-muybridge.vimeocdn.com/animated-thumbnails/image/93b9a154-ecc1-43c2-92e6-0b14a6dc1ee4.gif?ClientID=vimeo-core-prod&Date=1647730965&Signature=01143cec6fcba635546e1067973f9e3bbf5ad8ad',
+      'https://videoapi-muybridge.vimeocdn.com/animated-thumbnails/image/970c6d11-a52a-4879-afa2-53138aae4d32.gif?ClientID=vimeo-core-prod&Date=1647729514&Signature=2a089aa15bbf41e0e9b9eef2ed3aa1d394ab1f3d',
+      'https://videoapi-muybridge.vimeocdn.com/animated-thumbnails/image/97099242-08ea-44f6-89c5-685e000f5cd0.gif?ClientID=vimeo-core-prod&Date=1647728147&Signature=71c524535b6d1d4584f4a7a3b0a32bf27cead47b',
+      'https://videoapi-muybridge.vimeocdn.com/animated-thumbnails/image/93b9a154-ecc1-43c2-92e6-0b14a6dc1ee4.gif?ClientID=vimeo-core-prod&Date=1647730965&Signature=01143cec6fcba635546e1067973f9e3bbf5ad8ad',
+      'https://videoapi-muybridge.vimeocdn.com/animated-thumbnails/image/970c6d11-a52a-4879-afa2-53138aae4d32.gif?ClientID=vimeo-core-prod&Date=1647729514&Signature=2a089aa15bbf41e0e9b9eef2ed3aa1d394ab1f3d',
+      'https://videoapi-muybridge.vimeocdn.com/animated-thumbnails/image/97099242-08ea-44f6-89c5-685e000f5cd0.gif?ClientID=vimeo-core-prod&Date=1647728147&Signature=71c524535b6d1d4584f4a7a3b0a32bf27cead47b',
+      'https://videoapi-muybridge.vimeocdn.com/animated-thumbnails/image/93b9a154-ecc1-43c2-92e6-0b14a6dc1ee4.gif?ClientID=vimeo-core-prod&Date=1647730965&Signature=01143cec6fcba635546e1067973f9e3bbf5ad8ad',
+      'https://videoapi-muybridge.vimeocdn.com/animated-thumbnails/image/970c6d11-a52a-4879-afa2-53138aae4d32.gif?ClientID=vimeo-core-prod&Date=1647729514&Signature=2a089aa15bbf41e0e9b9eef2ed3aa1d394ab1f3d',
+      'https://videoapi-muybridge.vimeocdn.com/animated-thumbnails/image/97099242-08ea-44f6-89c5-685e000f5cd0.gif?ClientID=vimeo-core-prod&Date=1647728147&Signature=71c524535b6d1d4584f4a7a3b0a32bf27cead47b',
+      'https://videoapi-muybridge.vimeocdn.com/animated-thumbnails/image/93b9a154-ecc1-43c2-92e6-0b14a6dc1ee4.gif?ClientID=vimeo-core-prod&Date=1647730965&Signature=01143cec6fcba635546e1067973f9e3bbf5ad8ad',
+      ];
+
+    photoURLs.forEach(url => {
+      const photoItem = document.createElement('img');
+      photoItem.classList.add('photo-item');
+      photoItem.src = url;
+      photoGrid.appendChild(photoItem);
+    });
+  </script>
+
+</body>
+</html>

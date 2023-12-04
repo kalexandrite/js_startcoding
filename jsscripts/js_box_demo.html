@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout Toggle</title>
+  <style>
+    @import url(https://fonts.googleapis.com/css?family=Ubuntu:400,800);
+    @import url('https://fonts.googleapis.com/css2?family=Changa&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=BioRhyme+Expanded:wght@800&family=Handjet:wght@500&display=swap');
+
+    @font-face {
+      font-family: 'Noto Emoji', sans-serif;
+      src: 'assets/NotoColorEmoji-Regular.ttf';
+    }
+  </style>
+  <link rel="stylesheet" type="text/css" href="/jsscripts/style_box_js.css">
+</head>
+<body>  
+  <div id="layout-container">   
+  <div class="layout-item2"> 
+    <div id="squirrel" onmouseover="hideGif()" onmouseout="showGif()">
+      <h2>🐿</h2>
+    </div>   <div id="squirrel" onmouseover="hideGif()" onmouseout="showGif()">
+      <h2>🐿</h2>
+    </div>   
+  </div>
+  <div id="layout-container">      
+    <div class="layout-item4">
+      <div class="iframevideo">      
+    <iframe src="https://player.vimeo.com/video/470800783?h=1e9c9bc738&title=0&byline=0&portrait=0" width="640" height="320" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen> </iframe>
+         </div> </div>
+  <div class="boxflex">
+      <button onclick="toggleLayout()">toggle me ↔</button>
+    </div>
+    <div class="layout-item3"> 
+      <a href="https://vimeo.com/470800783">(Bluetooth Orchestration)</a> from <a href="https://vimeo.com/katealexandrite">Kate Alexandrite</a></p>
+      </div>
+
+    <div class="layout-item4">
+      <h2><a href="https://www.unicode.org/emoji/charts/emoji-variants.html" alt="tool link for emoji">  🛠 <br><br>
+        </a></h2>
+    </div>
+
+    <div class="layout-item2">
+        🌬
+        🌬
+        🌬
+
+    </div>
+    <div class="layout-item">
+        <img src="/assets/happy_comp.gif" alt="happy computer gif">
+    </div>
+    <div class="layout-item3">
+      <h1>LOL</h1>
+    </div>
+    
+    <div class="layout-item">
+ <p>type letters while hovering here:</p><div class="layout-item-iframe">
+  <iframe src="/index.html"></iframe>
+</div></div>
+ 
+    <div class="layout-item">
+      <p onmouseover="replaceWithEmoji(this)" onmouseout="restoreText(this")<h2>Hello</h2></p>
+      <p onmouseover="replaceWithEmoji(this)" onmouseout="restoreText(this") <h2>World</h2></p>
+    </div>
+    <div class="layout-item3">
+   <a href="https://www.unicode.org/emoji/charts/emoji-variants.html">emoji code<br></a> 
+  </div>      
+</div>
+  <div id="layout-container">    
+      <div id="photo-grid">
+      </div>
+  </div>
+  <script src="/jsscripts/photoscroll.js"></script>
+  <script src="/jsscripts/toggleLayout.js"></script>
+  <script src="/jsscripts/replaceWithEmoji.js"></script>
+  <script src="/jsscripts/hidegif.js"></script>
+</body>
+
+</html>
