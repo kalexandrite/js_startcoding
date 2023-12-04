@@ -1,7 +1,7 @@
 
 .container {
-    min-width: 100vw;
-    min-height: 100dvh;
+    min-height: 100%;
+    min-width: 100%;
     display: grid;
     align-items: center;
     justify-content:center;
@@ -11,7 +11,6 @@
   /* style for grid square */
   .square {
     display: border-box;
-
   }
 
   /* Style for the iframe within each square */
@@ -20,10 +19,10 @@ iframe {
   }
   
 
-  @media (max-width: 200px) {
+  @media (max-width: 1400px) {
     .container {
-        min-width: 100vb;  
-        min-height: 100vh;
+      max-height: 90vh;  
+      max-width: 90vb;
       margin: 5%;
       gap: 0px;
       align-content: center;
@@ -31,12 +30,3 @@ iframe {
     }
 }
 
-@media (max-width: 1800px) {
-    .container {
-      min-width: 100vb;  
-      min-height: 100vh;
-      margin: 10%;
-      align-content: center;
-      justify-content: center;
-    }
-}

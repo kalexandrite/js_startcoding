@@ -46,7 +46,6 @@ body {
     align-content: center;
     align-items: stretch;
     justify-content: center;
-    justify-items: stretch;
     padding: 10px;
     margin: 0px;
     min-height: min-content;
@@ -270,8 +269,8 @@ iframe {
 }
 
 #squirrel{
-    display: inline-block;
+    display: inline-flex;
     align-items: center;
-    align-content: center;
+    justify-content: center;
 
 }

@@ -1,0 +1,45 @@
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex 1 1 50ch;
+    flex-direction: row;
+    align-items: center;
+    justify-self: center;
+    margin: 5%;
+    gap: 0px;
+}
+
+.container2 {
+    height: 100vh;
+    width: 50vw;
+    display: flex 1 2 100ch;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 5%;
+    gap: 0px;
+}
+.square {
+    display:block;
+    position: absolute;
+    /* Set a maximum width if needed */
+}
+
+.square2{
+    display: inline-block;
+    height: 100vw;
+    min-width: max-content;
+    max-width: 50ch;
+    overflow: hidden;
+    /* Set a maximum width if needed */
+}
+
+/* Style for the iframe within each square */
+iframe {
+    width: 100%; 
+    height: 100%;
+    border: none;
+    overflow: hidden;
+}
